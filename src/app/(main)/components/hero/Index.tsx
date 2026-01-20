@@ -230,7 +230,7 @@ export const Hero = () => {
           </Stack>
 
           {/* CTA Buttons */}
-          <Group ref={buttonsRef} gap="md" mt="sm">
+          <Group ref={buttonsRef} className="flex! items-center! justify-center!" gap="md" mt="sm">
             <Button
               size="lg"
               radius="xl"
