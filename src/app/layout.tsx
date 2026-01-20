@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Karla, Lato, Macondo } from "next/font/google";
+import { Karla, Macondo } from "next/font/google";
 import "./globals.css";
 import {
   Box,
@@ -8,6 +8,7 @@ import {
   MantineProvider,
 } from "@mantine/core";
 import { Footer, Navbar } from "@/Layouts";
+import { SmoothScroll } from "@/Components";
 
 const karla = Karla({
   variable: "--font-karla",
@@ -40,8 +41,9 @@ export default function RootLayout({
       </head>
 
       <body className={`${karla.variable} ${macondo.variable} antialiased`}>
-        <MantineProvider defaultColorScheme="dark">
+        <MantineProvider>
           <Box>
+            <SmoothScroll />
             <Navbar />
             {children}
             <Footer />

@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: var(--font-karla);
+  }
+
+  span {
+    font-family: var(--font-macondo);
+  }
+
+  p {
+    font-family: var(--font-karla);
+  }
+}
+
+@layer components {
+  .font-karla {
+    font-family: var(--font-karla);
+  }
+
+  .font-macondo {
+    font-family: var(--font-macondo);
+  }
+}
