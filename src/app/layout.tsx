@@ -37,11 +37,11 @@ export default function RootLayout({
   return (
     <html lang="en" {...mantineHtmlProps} suppressHydrationWarning>
       <head>
-        <ColorSchemeScript defaultColorScheme="dark" />
+        <ColorSchemeScript defaultColorScheme="light" />
       </head>
       <body className={`${karla.variable} ${macondo.variable} antialiased`}>
         <MantineProvider
-          defaultColorScheme="dark"
+          defaultColorScheme="light"
           theme={{
             fontFamily: "var(--font-karla)",
             headings: { fontFamily: "var(--font-macondo)" },
