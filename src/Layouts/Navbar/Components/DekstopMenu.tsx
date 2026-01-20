@@ -3,8 +3,10 @@
 import { navLinks } from "@/Constants";
 import { Box, Menu, UnstyledButton, Text } from "@mantine/core";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const DekstopMenu = () => {
+  const pathName = usePathname();
   return (
     <Box className="flex items-center justify-center gap-6 relative">
       {navLinks.map((link, idx) =>
@@ -13,12 +15,15 @@ const DekstopMenu = () => {
             key={idx}
             trigger="click"
             transitionProps={{ transition: "pop-top-right" }}
-            position="bottom-start"
+            position="bottom"
             offset={5}
           >
             <Menu.Target>
               <UnstyledButton>
-                <Text tt="capitalize" className="cursor-pointer">
+                <Text
+                  tt="capitalize"
+                  className={`cursor-pointer! hover:text-teal-500! ${pathName === link.href ? "font-bold! text-teal-600!" : ""}`}
+                >
                   {link.name}
                 </Text>
               </UnstyledButton>
@@ -34,7 +39,10 @@ const DekstopMenu = () => {
           </Menu>
         ) : (
           <Link key={idx} href={link.href} style={{ textDecoration: "none" }}>
-            <Text tt="capitalize" className="cursor-pointer">
+            <Text
+              tt="capitalize"
+              className={`cursor-pointer! hover:text-teal-500! ${pathName === link.href ? "font-bold! text-teal-600!" : ""}`}
+            >
               {link.name}
             </Text>
           </Link>

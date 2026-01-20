@@ -1,8 +1,12 @@
+import { Box } from "@mantine/core";
+import { Hero } from "./(main)/components/hero/Index";
+import PixelBlast from "@/Components/Background/Background";
+
 const Home = () => {
   return (
-    <div>
-      Home Page
-    </div>
-  )
-}
-export default Home
+    <Box>
+      <Hero />
+    </Box>
+  );
+};
+export default Home;

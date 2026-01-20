@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Karla, Macondo } from "next/font/google";
 import "./globals.css";
+import '@mantine/core/styles.css';
 import {
   Box,
   ColorSchemeScript,
@@ -15,6 +16,7 @@ const karla = Karla({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
+
 const macondo = Macondo({
   variable: "--font-macondo",
   weight: ["400"],
@@ -24,9 +26,7 @@ const macondo = Macondo({
 export const metadata: Metadata = {
   title: "DEVINK",
   description: "A modern blogging platform for developers.",
-  icons: {
-    icon: "/logo.png",
-  },
+  icons: { icon: "/logo.png" },
 };
 
 export default function RootLayout({
@@ -39,9 +39,14 @@ export default function RootLayout({
       <head>
         <ColorSchemeScript defaultColorScheme="dark" />
       </head>
-
       <body className={`${karla.variable} ${macondo.variable} antialiased`}>
-        <MantineProvider>
+        <MantineProvider
+          defaultColorScheme="dark"
+          theme={{
+            fontFamily: "var(--font-karla)",
+            headings: { fontFamily: "var(--font-macondo)" },
+          }}
+        >
           <Box>
             <SmoothScroll />
             <Navbar />
