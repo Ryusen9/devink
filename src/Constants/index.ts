@@ -64,3 +64,37 @@ export const highlights = [
     icon: Sparkles,
   },
 ];
+
+export const topWriters = [
+  {
+    name: "Alicia Johnson",
+    occupation: "Full-Stack Developer",
+    posts: 34,
+    image: "https://i.ibb.co/LXPqQ3J3/Professional-Portrait.png",
+  },
+  {
+    name: "Bob Smith",
+    occupation: "DevOps Engineer",
+    posts: 28,
+    image: "https://i.ibb.co/mC6HHLcr/Man-in-Blue-Shirt.png",
+  },
+  {
+    name: "Catherine Lee",
+    occupation: "Data Scientist",
+    posts: 22,
+    image: "https://i.ibb.co/4nM5Yfzt/Tennis-Court-Focus.png",
+  },
+  {
+    name: "David Kim",
+    occupation: "Mobile App Developer",
+    posts: 19,
+    image: "https://i.ibb.co/8g8BBqJ9/pexels-moshalex-32719900.jpg",
+  },
+  {
+    name: "Emily Davis",
+    occupation: "UI/UX Designer",
+    posts: 25,
+    image:
+      "https://i.ibb.co/mF98nTdR/pexels-rao-qingwei-400570939-16569345.jpg",
+  },
+];

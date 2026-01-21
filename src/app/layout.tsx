@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Karla, Macondo } from "next/font/google";
 import "./globals.css";
 import '@mantine/core/styles.css';
+import '@mantine/carousel/styles.css';
 import {
   Box,
   ColorSchemeScript,

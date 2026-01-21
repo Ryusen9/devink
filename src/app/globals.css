@@ -22,4 +22,17 @@
   .font-macondo {
     font-family: var(--font-macondo);
   }
+
+  /* Carousel custom styles */
+  .carousel-control:hover {
+    background-color: rgba(204, 251, 241, 0.9) !important;
+    transform: scale(1.05);
+    box-shadow: 0 16px 40px rgba(13, 148, 136, 0.3) !important;
+  }
+
+  .carousel-indicator[data-active] {
+    opacity: 1 !important;
+    width: 32px !important;
+    border-radius: 999px !important;
+  }
 }
