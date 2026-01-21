@@ -43,8 +43,6 @@ const TopWriters = () => {
           }}
           slideGap={{ base: "sm", sm: "md", md: "lg" }}
           withIndicators
-          controlSize={25}
-          controlsOffset="xl"
           emblaOptions={{
             dragFree: false,
             containScroll: "trimSnaps",
@@ -52,17 +50,9 @@ const TopWriters = () => {
             loop: true,
           }}
           classNames={{
-            control: "carousel-control",
             indicator: "carousel-indicator",
           }}
           styles={{
-            control: {
-              color: theme.colors.teal[7],
-              backgroundColor: "rgba(255, 255, 255, 0.95)",
-              backdropFilter: "blur(8px)",
-              boxShadow: "0 12px 32px rgba(13, 148, 136, 0.2)",
-              transition: "all 200ms ease",
-            },
             indicator: {
               backgroundColor: theme.colors.teal[6],
               width: 10,

@@ -98,3 +98,14 @@ export const topWriters = [
       "https://i.ibb.co/mF98nTdR/pexels-rao-qingwei-400570939-16569345.jpg",
   },
 ];
+
+export const mainLinks = [
+  { href: "/about", label: "About" },
+  { href: "/blog", label: "Blog" },
+  { href: "/writers", label: "Writers" },
+];
+
+export const legalLinks = [
+  { href: "/privacy", label: "Privacy" },
+  { href: "/terms", label: "Terms" },
+];
