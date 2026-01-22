@@ -68,10 +68,8 @@ const TopWriters = () => {
               <Card
                 radius="xl"
                 withBorder
-                className="h-full! overflow-hidden! transition-all duration-300 hover:shadow-2xl! hover:scale-[1.02]!"
+                className="h-full! overflow-hidden!"
                 style={{
-                  backgroundColor: "#ffffff",
-                  boxShadow: "0 20px 50px rgba(13,148,136,0.12)",
                   borderColor: "rgba(13,148,136,0.2)",
                   cursor: "pointer",
                 }}
@@ -100,8 +98,6 @@ const TopWriters = () => {
                       style={{
                         position: "absolute",
                         inset: 0,
-                        background:
-                          "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(13,148,136,0.15) 60%, rgba(13,148,136,0.4) 100%)",
                       }}
                     />
                     <Badge
