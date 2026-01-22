@@ -59,7 +59,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav ref={navRef} className="fixed top-0 left-0 w-full z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between border px-3 mt-0 md:mt-2 md:rounded-xl border-gray-400 bg-teal-100/50 backdrop-blur-sm py-2">
+      <div className="max-w-[1400px] mx-auto flex items-center justify-between border px-3 mt-0 md:mt-2 md:rounded-xl border-gray-400 bg-teal-100/50 backdrop-blur-sm py-2">
         {/* Logo */}
         <Link href="/">
           <Box className="flex items-center justify-center">

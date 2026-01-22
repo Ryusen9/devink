@@ -1,9 +1,10 @@
-import { Box, Text, Title } from "@mantine/core";
+import { Box, Container, Text, Title } from "@mantine/core";
+import WhoWeAreGrid from "./components/WhoWeAreGrid";
 
 const AboutPage = () => {
   return (
     <section className="w-full mt-24 flex flex-col items-center px-4">
-      <Box>
+      <Box className="w-full! pt-16!">
         <Title ff={"var(--font-macondo)"} ta="center" fz={48}>
           About DEVINK
         </Title>
@@ -11,6 +12,10 @@ const AboutPage = () => {
           DEVINK is a modern blogging platform designed specifically for
           developers.
         </Text>
+        {/* Main Components */}
+        <Container className="mt-1! w-full!">
+          <WhoWeAreGrid />
+        </Container>
       </Box>
     </section>
   );

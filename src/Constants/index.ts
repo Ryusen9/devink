@@ -109,3 +109,10 @@ export const legalLinks = [
   { href: "/privacy", label: "Privacy" },
   { href: "/terms", label: "Terms" },
 ];
+
+export const stats = [
+  { label: "Happy Clients", value: "92%" },
+  { label: "Year of Experience", value: "24" },
+  { label: "Completed Project", value: "14.2k+" },
+  { label: "Awards Won", value: "12+" },
+];
