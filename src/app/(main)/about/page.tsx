@@ -1,5 +1,12 @@
 import { Box, Container, Text, Title } from "@mantine/core";
 import WhoWeAreGrid from "./components/WhoWeAreGrid";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ABOUT",
+  description: "Learn more about DEVINK, a blogging platform for developers.",
+  icons: { icon: "/logo.png" },
+};
 
 const AboutPage = () => {
   return (
