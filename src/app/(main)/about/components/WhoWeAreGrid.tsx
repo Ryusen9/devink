@@ -111,7 +111,7 @@ export default function WhoWeAreGrid() {
                 <Paper
                   shadow="sm"
                   radius="lg"
-                  className="bg-white text-center py-6 border border-teal-50 w-32! h-28!"
+                  className="bg-white text-center py-6 border border-teal-50 w-32! h-28! mx-auto!"
                 >
                   <Text
                     fw={800}

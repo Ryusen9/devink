@@ -35,7 +35,7 @@ export function Footer({
 }: FooterProps = {}) {
   return (
     <footer className="pb-6 pt-16 lg:pb-8 lg:pt-24 border-t border-gray-300 mt-10">
-      <div className="px-4 lg:px-8">
+      <div className="px-4 lg:px-8 max-w-362.5 mx-auto">
         <div className="md:flex md:items-start md:justify-between">
           <div className="flex flex-col gap-y-4">
             <Link
