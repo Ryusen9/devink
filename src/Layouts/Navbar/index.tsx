@@ -1,15 +1,16 @@
 "use client";
 
-import { ActionIcon, Box, Button, Drawer, Flex } from "@mantine/core";
+import { ActionIcon, Box, Button, Drawer, Flex, Modal } from "@mantine/core";
 import Image from "next/image";
 import logo from "../../../public/logo.png";
 import DekstopMenu from "./Components/DekstopMenu";
 import MobileMenu from "./Components/MobileMenu";
 import Link from "next/link";
-import { LogIn, MenuIcon, X } from "lucide-react";
+import {  MenuIcon, X } from "lucide-react";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useDisclosure } from "@mantine/hooks";
+import Authentication from "./Components/Authentication";
 
 const Navbar = () => {
   const navRef = useRef<HTMLElement>(null);
@@ -73,15 +74,8 @@ const Navbar = () => {
         </Box>
         {/* buttons */}
         <Flex align="center" gap={8}>
-          <Link href="/signup">
-            <Button
-              variant="filled"
-              className="bg-teal-500! hover:bg-teal-600! duration-300!"
-              rightSection={<LogIn size={20} />}
-            >
-              Sign Up
-            </Button>
-          </Link>
+          <Authentication/>
+
           <ActionIcon
             className="md:hidden!"
             size={37}
